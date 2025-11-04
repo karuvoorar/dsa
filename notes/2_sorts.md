@@ -31,11 +31,11 @@ Sorting is the **foundation** for solving many DSA and CP problems. A strong gri
 
 ### 🔹 1. **Bubble Sort**
 
-**Idea:** Repeatedly swap adjacent elements if they are in the wrong order.
-**Best Case:** O(n)
-**Worst Case:** O(n²)
-**Stable:** ✅
-**In-place:** ✅
+**Idea:** Repeatedly swap adjacent elements if they are in the wrong order.  
+**Best Case:** O(n)  
+**Worst Case:** O(n²)  
+**Stable:** ✅  
+**In-place:** ✅  
 **When to Use:** When array is *almost sorted*.
 
 ```java
@@ -49,36 +49,36 @@ for (int i = 0; i < n - 1; i++)
 
 ### 🔹 2. **Selection Sort**
 
-**Idea:** Select the smallest element and place it at the beginning.
-**Best/Worst/Average:** O(n²)
-**Stable:** ❌
-**In-place:** ✅
+**Idea:** Select the smallest element and place it at the beginning.  
+**Best/Worst/Average:** O(n²)  
+**Stable:** ❌  
+**In-place:** ✅  
 **When to Use:** When memory writes are costly (e.g., flash memory).
 
 ---
 
 ### 🔹 3. **Insertion Sort**
 
-**Idea:** Build sorted array one item at a time by inserting elements in correct position.
-**Best Case:** O(n)
-**Worst Case:** O(n²)
-**Stable:** ✅
-**In-place:** ✅
+**Idea:** Build sorted array one item at a time by inserting elements in correct position.  
+**Best Case:** O(n)  
+**Worst Case:** O(n²)  
+**Stable:** ✅  
+**In-place:** ✅  
 **When to Use:** For *small arrays* or *nearly sorted arrays*.
 
 ---
 
 ### 🔹 4. **Merge Sort**
 
-**Idea:** Divide array, sort each half, then merge.
-**Approach:** *Divide & Conquer*
-**Time Complexity:** O(n log n)
-**Space Complexity:** O(n)
-**Stable:** ✅
-**In-place:** ❌
-**When to Use:** When stability matters (e.g., sorting objects by multiple keys).
+**Idea:** Divide array, sort each half, then merge.  
+**Approach:** *Divide & Conquer*  
+**Time Complexity:** O(n log n)  
+**Space Complexity:** O(n)  
+**Stable:** ✅  
+**In-place:** ❌  
+**When to Use:** When stability matters (e.g., sorting objects by multiple keys).  
 
-**Recursion Tree:**
+**Recursion Tree:**  
 Each level divides the array → log(n) levels → merging cost = O(n).
 
 ```java
@@ -95,56 +95,55 @@ private int[] mergeSort(int[] arr, int left, int right) {
 
 ### 🔹 5. **Quick Sort**
 
-**Idea:** Choose a pivot, partition array into left (smaller) and right (greater) sides, and recursively sort.
-**Approach:** *Divide & Conquer*
-**Best Case:** O(n log n)
-**Worst Case:** O(n²) *(bad pivot choice)*
-**Average Case:** O(n log n)
-**In-place:** ✅
-**Stable:** ❌
-
+**Idea:** Choose a pivot, partition array into left (smaller) and right (greater) sides, and recursively sort.  
+**Approach:** *Divide & Conquer*  
+**Best Case:** O(n log n)  
+**Worst Case:** O(n²) *(bad pivot choice)*  
+**Average Case:** O(n log n)  
+**In-place:** ✅  
+**Stable:** ❌  
 **When to Use:** General-purpose fast sorting, especially in competitive programming.
 
 ---
 
 ### 🔹 6. **Heap Sort**
 
-**Idea:** Build a max heap, then repeatedly extract max to sort.
-**Time Complexity:** O(n log n)
-**Space Complexity:** O(1)
-**In-place:** ✅
-**Stable:** ❌
+**Idea:** Build a max heap, then repeatedly extract max to sort.  
+**Time Complexity:** O(n log n)  
+**Space Complexity:** O(1)  
+**In-place:** ✅  
+**Stable:** ❌  
 **When to Use:** When you need guaranteed O(n log n) without recursion.
 
 ---
 
 ### 🔹 7. **Counting Sort**
 
-**Idea:** Count occurrences of each unique value (non-comparison).
-**Time Complexity:** O(n + k)
-**Space:** O(k)
-**Stable:** ✅
+**Idea:** Count occurrences of each unique value (non-comparison).  
+**Time Complexity:** O(n + k)  
+**Space:** O(k)  
+**Stable:** ✅  
 **When to Use:** Small integer range.
 
 ---
 
 ### 🔹 8. **Radix Sort**
 
-**Idea:** Sort numbers digit by digit using Counting Sort as subroutine.
-**Time Complexity:** O(d*(n + k))
+**Idea:** Sort numbers digit by digit using Counting Sort as subroutine.  
+**Time Complexity:** O(d*(n + k))  
 **When to Use:** Large datasets of integers/strings with limited length.
 
 ---
 
 ### 🔹 9. **Bucket Sort**
 
-**Idea:** Distribute elements into buckets, sort each bucket individually.
-**Time Complexity:** O(n + k)
+**Idea:** Distribute elements into buckets, sort each bucket individually.  
+**Time Complexity:** O(n + k)  
 **When to Use:** Uniformly distributed data.
 
 ---
 
-## Identifying Which Sort to Use
+## 🧭 Identifying Which Sort to Use
 
 | Problem Type                   | Choose             | Reason                    |
 | ------------------------------ | ------------------ | ------------------------- |
@@ -157,7 +156,7 @@ private int[] mergeSort(int[] arr, int left, int right) {
 
 ---
 
-## Complexity Comparison Table
+## 🧮 Complexity Comparison Table
 
 | Algorithm | Best        | Average     | Worst       | Space    | Stable | In-place |
 | --------- | ----------- | ----------- | ----------- | -------- | ------ | -------- |
@@ -173,7 +172,7 @@ private int[] mergeSort(int[] arr, int left, int right) {
 
 ---
 
-## Sorting in Problem Patterns
+## 🧠 Sorting in Problem Patterns
 
 | Pattern                         | Example Problems               | Technique Used               |
 | ------------------------------- | ------------------------------ | ---------------------------- |
@@ -185,20 +184,19 @@ private int[] mergeSort(int[] arr, int left, int right) {
 
 ---
 
-## Programming Sorting Tips
+## 🚀 Programming Sorting Tips
 
-1. **Know your sort limit** → `O(n log n)` for up to `10^6` elements.
-2. **Avoid recursion limits** → Use `heap sort` for safety in C++/Java.
-3. **Use built-in sort smartly**:
-
-   * `Arrays.sort()` in Java → Dual-Pivot QuickSort (primitives), TimSort (objects).
-   * `std::sort()` in C++ → IntroSort (Quick + Heap + Insertion).
-4. **Understand TimSort (used in Python/Java)** → Hybrid of Merge + Insertion.
-5. **Optimize custom comparators** → Avoid string/long operations in inner loops.
+1. **Know your sort limit** → `O(n log n)` for up to `10^6` elements.  
+2. **Avoid recursion limits** → Use `heap sort` for safety in C++/Java.  
+3. **Use built-in sort smartly:**  
+   - `Arrays.sort()` in Java → Dual-Pivot QuickSort (primitives), TimSort (objects).  
+   - `std::sort()` in C++ → IntroSort (Quick + Heap + Insertion).  
+4. **Understand TimSort (used in Python/Java)** → Hybrid of Merge + Insertion.  
+5. **Optimize custom comparators** → Avoid string/long operations in inner loops.  
 
 ---
 
-## Quick Revision Cheatsheet
+## ⚡ Quick Revision Cheatsheet
 
 ```
 Bubble — adjacent swap — O(n²)
