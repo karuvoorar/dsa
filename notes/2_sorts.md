@@ -1,4 +1,4 @@
-# Mastering Sorting Algorithms — Competitive Programming & Interviews
+# Sorting Algorithms
 
 Sorting is the **foundation** for solving many DSA and CP problems. A strong grip on it helps you identify patterns like *Divide & Conquer*, *Greedy*, and *Two-Pointers* faster.
 
@@ -185,7 +185,7 @@ private int[] mergeSort(int[] arr, int left, int right) {
 
 ---
 
-## Competitive Programming Sorting Tips
+## Programming Sorting Tips
 
 1. **Know your sort limit** → `O(n log n)` for up to `10^6` elements.
 2. **Avoid recursion limits** → Use `heap sort` for safety in C++/Java.
