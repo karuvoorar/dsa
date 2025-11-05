@@ -1,4 +1,4 @@
-# Arrays DSA Master Notes
+# Arrays
 
 ---
 
