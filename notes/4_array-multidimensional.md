@@ -1,4 +1,4 @@
-# 2D Arrays Mastery in One Day
+# 2D Arrays
 
 ---
 
