@@ -1,6 +1,6 @@
 package leetcode.math;
 
-public class CountOperations {
+public class CountOperations2169 {
 
     /*
      * You are given two non-negative integers num1 and num2.
