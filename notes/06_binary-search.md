@@ -1,5 +1,5 @@
 
-# **MASTER LIST — Binary Search Patterns (All You Need)**
+# **Binary Search Patterns**
 
 ## **Classic Binary Search**
 
@@ -208,7 +208,7 @@ while (high - low > 1e-6)
 
 ---
 
-# 🎯 **Summary — What To Study**
+# **Summary — What To Study**
 
 If you learn ONLY these **11 patterns**, you're interview-ready:
 
