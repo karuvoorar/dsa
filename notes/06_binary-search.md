@@ -219,11 +219,10 @@ If you learn ONLY these **11 patterns**, you're interview-ready:
 4. Floor / Last Occurrence
 5. Binary Search on Answer
 6. Rotated Sorted Array Search
+7. Binary Search on Answers like Min(Max)/Max(Min)
 7. 2D Matrix Binary Search
 8. Function-based Binary Search
 9. Feasibility Checking + Binary Search
-10. BST-based Binary Search
-11. Floating point Binary Search
 ```
 
 ---
