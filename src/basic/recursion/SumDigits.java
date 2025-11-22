@@ -21,20 +21,13 @@ public class SumDigits {
      * Now only one digit remains, so we return 2.
      */
 
-    public int addDigits(int num) {
-        return add(num, 0);
+    public static void main(String[] num) {
+        System.out.println(add(1342));
     }
 
-    public int add(int num, int sum) {
-        int rev = num;
-        if (rev == 0) {
-            if (sum >= 10) {
-                rev = sum;
-                sum = 0;
-            } else
-                return sum;
-        }
+    public static int add(int num) {
+        if(num%10 == num) return num;
 
-        return add(rev / 10, sum + rev % 10);
+        return num%10 + add(num/10);
     }
 }
