@@ -7,7 +7,8 @@ public class PhoneCharsCombinations {
 
     public static void main(String[] args) {
         System.out.println("Phone Characters Combinations..." + letterCombinations("34"));
-        System.out.println("Phone Characters Combinations..." + letterCombinations("3497"));
+        // System.out.println("Phone Characters Combinations..." +
+        // letterCombinations("3497"));
     }
 
     public static List<String> letterCombinations(String digits) {
@@ -24,23 +25,20 @@ public class PhoneCharsCombinations {
         return ans;
     }
 
-    private static void letterCombinations(String[] phoneDial, char[] digits, int i, List<String> ans, String res) {
+    private static void letterCombinations(String[] phoneDial, char[] digits, int index, List<String> ans, String res) {
 
         // base conditions
-        if (i == digits.length) {
-            ans.add(new String(res));
+        if (index == digits.length) {
+            ans.add(res);
             return;
         }
 
         // fetch the correct string
-        int digit = digits[i] - '0';
-        char[] digitalChars = phoneDial[digit].toCharArray();
+        char[] digitalChars = phoneDial[digits[index] - '0'].toCharArray();
 
         // for a dial number we add each and every char in loop
-        for (int j = 0; j < digitalChars.length; j++) {
-            res += digitalChars[j];
-            letterCombinations(phoneDial, digits, i + 1, ans, res);
-            res = (res == null || res.length() == 0) ? res : res.substring(0, res.length() - 1);
+        for (char ch : digitalChars) {
+            letterCombinations(phoneDial, digits, index + 1, ans, res + ch);
         }
     }
 }
