@@ -1,4 +1,4 @@
-package linkedlist.fundamentals;
+package linkedlist.fundamentals.singly;
 
 public class ArrayToList {
 

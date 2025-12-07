@@ -1,4 +1,4 @@
-package linkedlist.fundamentals;
+package linkedlist.fundamentals.singly;
 
 import java.util.ArrayList;
 import java.util.List;
