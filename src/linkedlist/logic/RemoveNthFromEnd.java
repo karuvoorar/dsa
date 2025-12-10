@@ -19,7 +19,7 @@ public class RemoveNthFromEnd {
 
         // Move fast to tail
         // Move slow to prev node
-        while (fast != null) {
+        while (fast.next != null) {
             slow = slow.next;
             fast = fast.next;
         }

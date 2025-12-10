@@ -31,8 +31,8 @@ Each node has:
 
 Properties:
 - One-way traversal
-- Insert/delete at head is O(1)
-- Insert/delete at tail is O(1) only if you maintain a tail pointer
+- Insert/delete at head is `O(1)`
+- Insert/delete at tail is `O(1)` only if you maintain a tail pointer
 - Cannot move backward
 - Uses less memory than doubly linked list
 
@@ -52,9 +52,15 @@ null <- [prev | data | next] <-> [prev | data | next] <-> [prev | data | next] -
 
 Properties:
 - Two-way traversal
-- Insert/delete is O(1) if you already have node reference (because you can access prev and next immediately)
+- Insert/delete is `O(1)` if you already have node reference (because you can access prev and next immediately)
 - Slightly more memory due to extra pointer
 - Simpler deletion of any node without needing previous pointer from traversal
 
 Use cases:
 Browser history, LRU cache, text editors, double-ended queue implementations
+
+
+## Patterns
+
+### Two-Pointer (Fast–Slow) Pattern
+
