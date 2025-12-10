@@ -19,6 +19,18 @@ Operations:
 2. Browser
 3. Switching Apps in mac via cmd + tab
 
+
+## Deletion
+
+```
+IF deleting current node:
+    previous stays
+    current = next surviving node
+ELSE:
+    previous = current
+    current = current.next
+```
+
 ## Singly Linked List
 
 Each node has:
