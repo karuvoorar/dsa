@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ShortestJobFirst {
 
-    public long solve(int[] bt) {
+    public long shortestJobFirst(int[] bt) {
 
         if (bt.length <= 1)
             return 0;
