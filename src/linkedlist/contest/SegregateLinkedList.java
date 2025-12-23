@@ -66,7 +66,7 @@ class ListNode {
     int val;
     ListNode next;
 
-    ListNode() {
+    ListNode() { 
         val = 0;
         next = null;
     }
